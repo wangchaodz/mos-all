@@ -1,0 +1,33 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: register-eureka-server
+  # 设置用户名密码
+  security:
+    user:
+      name: admin
+      password: Haier2020
+
+eureka:
+  instance:
+    # 使用 ip 代替实例名
+    prefer-ip-address: true
+    # 实例的主机名
+    hostname: ${spring.cloud.client.ip-address}
+    # 实例的 ID 规则
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    # 是否向注册中心注册自己
+    registerWithEureka: false
+    # 是否向注册中心获取注册信息
+    fetchRegistry: false
+    service-url:
+      # 注册中心地址（集群版）
+      defaultZone: http://admin:Haier2020@localhost:8100/eureka/
+  server:
+    # 关闭保护机制
+    enable-self-preservation: false
+    # 及时剔除无效服务
+    eviction-interval-timer-in-ms: 30000
