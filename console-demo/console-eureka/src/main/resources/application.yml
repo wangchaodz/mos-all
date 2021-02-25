@@ -2,9 +2,33 @@
 server:
   port: 8888
 
+eureka:
+  instance:
+    # 使用 ip 代替实例名
+    prefer-ip-address: true
+    # 实例的主机名
+    hostname: ${spring.cloud.client.ip-address}
+    # 实例的 ID 规则
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    service-url:
+      # 注册中心地址
+      defaultZone: http://admin:Haier2020@localhost:8000/eureka
+
 spring:
   application:
     name: console-eureka
+  # thymeleaf
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+    check-template-location: true
+    prefix: classpath:/templates
+    suffix: .html
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+    enabled: true
 
 # log config
 logging:

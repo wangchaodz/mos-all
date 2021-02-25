@@ -1,5 +1,6 @@
 package com.mos.console.rbac.entity;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -11,6 +12,7 @@ import java.util.Set;
  * @author: wangchaodz@gmail.com
  */
 @Data
+@Builder
 public class SystemRole implements Serializable {
 
     private Long id;

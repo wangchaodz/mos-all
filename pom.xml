@@ -26,6 +26,8 @@
         <module>module-task</module>
         <module>server-demo</module>
         <module>module-logging</module>
+        <module>module-connection</module>
+        <module>module-bean</module>
     </modules>
 
     <dependencies>
@@ -43,6 +45,10 @@
                 <exclusion>
                     <groupId>org.junit.vintage</groupId>
                     <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>log4j-to-slf4j</artifactId>
+                    <groupId>org.apache.logging.log4j</groupId>
                 </exclusion>
             </exclusions>
         </dependency>

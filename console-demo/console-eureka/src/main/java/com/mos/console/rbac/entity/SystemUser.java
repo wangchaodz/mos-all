@@ -1,6 +1,8 @@
 package com.mos.console.rbac.entity;
 
+import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.util.Set;
@@ -11,11 +13,12 @@ import java.util.Set;
  * @author: wangchaodz@gmail.com
  */
 @Data
+@Builder
 public class SystemUser implements Serializable {
 
     private Long id;
-    private String userName;
-    private String password;
+    private String loginName;
+    private String loginPwd;
 
     /**
      * 用户对应的角色集合

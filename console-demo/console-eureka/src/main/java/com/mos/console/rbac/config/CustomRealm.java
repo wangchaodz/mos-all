@@ -71,7 +71,7 @@ public class CustomRealm extends AuthorizingRealm {
             return null;
         }
         //这里验证authenticationToken和simpleAuthenticationInfo的信息
-        SimpleAuthenticationInfo auth = new SimpleAuthenticationInfo(userName, user.getPassword(), getName());
+        SimpleAuthenticationInfo auth = new SimpleAuthenticationInfo(userName, user.getLoginPwd(), getName());
         return auth;
     }
 }
