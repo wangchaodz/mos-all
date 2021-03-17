@@ -2,17 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>mos-all</artifactId>
-        <groupId>com.mos</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
+    <version>0.0.1-SNAPSHOT</version>
     <groupId>com.mos.module.task</groupId>
     <artifactId>module-task</artifactId>
+    <packaging>pom</packaging>
 
     <modules>
         <module>module-task-xxl-job</module>
+        <module>module-task-quartz</module>
+        <module>module-task-timer</module>
+        <module>module-task-thread-sleep</module>
+        <module>module-task-scheduledExecutorService</module>
+        <module>module-task-elastic-job</module>
+        <module>module-task-light-task-scheduler</module>
+        <module>module-task-niubi-job</module>
+        <module>module-task-uncode-schedule</module>
+        <module>module-task-tb-schedule</module>
+        <module>module-task-clover</module>
     </modules>
 </project>

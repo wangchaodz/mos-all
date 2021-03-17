@@ -26,3 +26,4 @@ hs_err_pid*
 /module-connection/module-connection-wsdl/module-connection-wsdl.iml
 /module-bean/module-bean.iml
 /module-connection/module-connection.iml
+/server-demo/*.iml
