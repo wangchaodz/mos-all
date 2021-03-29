@@ -28,3 +28,8 @@ hs_err_pid*
 /module-connection/module-connection.iml
 /server-demo/*.iml
 /module-stock/module-stock.iml
+/module-tx/module-tx.iml
+/module-tx/module-tx-distribution/module-tx-distribution.iml
+/module-tx/module-tx-distribution-seata/module-tx-distribution-seata.iml
+/module-tx/module-tx-multi/module-tx-multi.iml
+/module-tx/module-tx-simple/module-tx-simple.iml
