@@ -13,6 +13,7 @@
         <module>module-tx-simple</module>
         <module>module-tx-multi</module>
         <module>module-tx-distribution</module>
+        <module>module-tx-distribution-seata</module>
     </modules>
 
     <properties>
